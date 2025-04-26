@@ -1,0 +1,103 @@
+<script setup lang="ts">
+import { Head, router } from '@inertiajs/vue3';
+import Layout from "@/Layouts/main.vue";
+import PageHeader from "@/Components/page-header.vue";
+// const data = {
+//   "props": {
+//     "errors": {},
+//     "jetstream": {
+//       "canCreateTeams": false,
+//       "canManageTwoFactorAuthentication": true,
+//       "canUpdatePassword": true,
+//       "canUpdateProfileInformation": true,
+//       "hasEmailVerification": true,
+//       "flash": [],
+//       "hasAccountDeletionFeatures": true,
+//       "hasApiFeatures": false,
+//       "hasTeamFeatures": false,
+//       "hasTermsAndPrivacyPolicyFeature": false,
+//       "managesProfilePhotos": true
+//     },
+//     "auth": {
+//       "id": 1,
+//       "role_id": 0,
+//       "name": "Hilmi Abdurrahim",
+//       "email": "helmetabd@mail.com",
+//       "email_verified_at": null,
+//       "two_factor_confirmed_at": null,
+//       "current_team_id": null,
+//       "profile_photo_path": "profile-photos/UXSWBc7phMudbXhAl82x43KcdobHwQYqUbenoAUJ.jpg",
+//       "settings": null,
+//       "created_at": "2024-11-08T04:31:14.000000Z",
+//       "updated_at": "2024-11-08T04:32:35.000000Z",
+//       "profile_photo_url": "https://learn-laravel-inertia.test/storage/profile-photos/UXSWBc7phMudbXhAl82x43KcdobHwQYqUbenoAUJ.jpg"
+//     },
+//     "errorBags": [],
+//     "ziggy": {
+//       "url": "https://learn-laravel-inertia.test",
+//       "port": null,
+//       "defaults": [],
+//       "routes": {
+//         "login": { "uri": "login", "methods": ["GET", "HEAD"] },
+//         "login.store": { "uri": "login", "methods": ["POST"] },
+//         "logout": { "uri": "logout", "methods": ["POST"] },
+//         "password.request": { "uri": "forgot-password", "methods": ["GET", "HEAD"] },
+//         "password.reset": { "uri": "reset-password/{token}", "methods": ["GET", "HEAD"], "parameters": ["token"] },
+//         "password.email": { "uri": "forgot-password", "methods": ["POST"] },
+//         "password.update": { "uri": "reset-password", "methods": ["POST"] },
+//         "register": { "uri": "register", "methods": ["GET", "HEAD"] },
+//         "register.store": { "uri": "register", "methods": ["POST"] },
+//         "verification.notice": { "uri": "email/verify", "methods": ["GET", "HEAD"] },
+//         "verification.verify": { "uri": "email/verify/{id}/{hash}", "methods": ["GET", "HEAD"], "parameters": ["id", "hash"] },
+//         "verification.send": { "uri": "email/verification-notification", "methods": ["POST"] },
+//         "user-profile-information.update": { "uri": "user/profile-information", "methods": ["PUT"] },
+//         "user-password.update": { "uri": "user/password", "methods": ["PUT"] },
+//         "password.confirm": { "uri": "user/confirm-password", "methods": ["GET", "HEAD"] },
+//         "password.confirmation": { "uri": "user/confirmed-password-status", "methods": ["GET", "HEAD"] },
+//         "password.confirm.store": { "uri": "user/confirm-password", "methods": ["POST"] },
+//         "two-factor.login": { "uri": "two-factor-challenge", "methods": ["GET", "HEAD"] },
+//         "two-factor.login.store": { "uri": "two-factor-challenge", "methods": ["POST"] },
+//         "two-factor.enable": { "uri": "user/two-factor-authentication", "methods": ["POST"] },
+//         "two-factor.confirm": { "uri": "user/confirmed-two-factor-authentication", "methods": ["POST"] },
+//         "two-factor.disable": { "uri": "user/two-factor-authentication", "methods": ["DELETE"] },
+//         "two-factor.qr-code": { "uri": "user/two-factor-qr-code", "methods": ["GET", "HEAD"] },
+//         "two-factor.secret-key": { "uri": "user/two-factor-secret-key", "methods": ["GET", "HEAD"] },
+//         "two-factor.recovery-codes": { "uri": "user/two-factor-recovery-codes", "methods": ["GET", "HEAD"] },
+//         "profile.show": { "uri": "user/profile", "methods": ["GET", "HEAD"] },
+//         "other-browser-sessions.destroy": { "uri": "user/other-browser-sessions", "methods": ["DELETE"] },
+//         "current-user-photo.destroy": { "uri": "user/profile-photo", "methods": ["DELETE"] },
+//         "current-user.destroy": { "uri": "user", "methods": ["DELETE"] },
+//         "sanctum.csrf-cookie": { "uri": "sanctum/csrf-cookie", "methods": ["GET", "HEAD"] },
+//         "dashboard": { "uri": "dashboard", "methods": ["GET", "HEAD"] },
+//         "storage.local": { "uri": "storage/{path}", "methods": ["GET", "HEAD"], "wheres": { "path": ".*" }, "parameters": ["path"] }
+//       },
+//       "location": "https://learn-laravel-inertia.test/dashboard"
+//     },
+//     "layoutValue": { 
+//       "layoutType": "vertical", 
+//       "layoutWidth": "fluid", 
+//       "sidebarSize": "lg", 
+//       "topbar": "light", 
+//       "mode": "light", 
+//       "position": "fixed", 
+//       "sidebarView": "default", 
+//       "sidebarColor": "light", 
+//       "sidebarImage": "none", 
+//       "preloader": "disable", 
+//       "visibility": "show" 
+//     }
+//   }, 
+//   "url": "/dashboard", 
+//   "component": "Dashboard", 
+//   "version": "75c243d3de1e8d4cf50bd89bb601c9ed", 
+//   "scrollRegions": [], 
+//   "rememberedState": {}
+// }
+</script>
+
+<template>
+  <Layout>
+    <Head title="Dashboard" />
+    <PageHeader title="Dashboard" pageTitle="Pages" />
+  </Layout>
+</template>
